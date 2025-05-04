@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PraysRunner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrypt.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Логотип.png" alt="Логотип">
+                <span>PraysRunner</span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header-btn">Заказать звонок</button>
+            
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+    
+    <!-- Основное содержимое страницы -->
+    <main>
+        <div class="phone1">
+            <img src="Телефон1.png" width="60%" height="60%">
+        </div>
+        <div class="serves_cen">
+            <h1>Сервис сравнения<br> цен в твоём<br> городе</h1>
+        </div>
+        <ul class="sovet">
+            <li>Ищешь где купить дешевле ?</li>
+            <li>Тратишь много времени на поиск товаров<br>
+                на разных маркетплейсах и в интернет-<br>
+                магазинах?</li>
+            <li>Пока ищешь в другом магазине цена или<br>
+                наличие могут измениться?</li>
+        </ul>
+        <div class="interesnoe">
+            <p>
+                Cheaper — ищем товары дешевле!
+            </p>
+        </div>
+
+        <!-- Блок поиска и сравнения -->
+        <div class="search-container">
+            <div class="search-box">
+                <select id="product-select">
+                    <option value="">Выберите товар...</option>
+                    <option value="iphone 13">iPhone 13</option>
+                    <option value="samsung galaxy s22">Samsung Galaxy S22</option>
+                    <option value="airpods pro">AirPods Pro 2</option>
+                </select>
+                <button id="search-btn">Найти</button>
+            </div>
+            
+            <div class="results-container">
+                <div class="stores-select">
+                    <select id="stores-select">
+                        <option value="">Выберите магазин...</option>
+                        <option value="all">Все магазины</option>
+                        <option value="wildberries">Wildberries</option>
+                        <option value="ozon">Ozon</option>
+                        <option value="yandex">Яндекс.Маркет</option>
+                        <option value="aliexpress">AliExpress</option>
+                        <option value="citilink">Citilink</option>
+                    </select>
+                </div>
+                
+                <div id="results-table" class="results-table">
+                    <!-- Здесь будут результаты -->
+                    <div class="no-results">
+                        <p>Введите название товара и нажмите "Найти"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
